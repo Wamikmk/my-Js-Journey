@@ -14,5 +14,4 @@ console.log("Wamik")
 // symbol => uniqueness
 
 // object
-
-console.log(typeof )
+console.log(typeof "Wamik")
