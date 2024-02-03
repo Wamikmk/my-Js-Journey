@@ -5,7 +5,7 @@ regularUser.email = "Johnny@gmail.com"
 regularUser.location = "New York"
 regularUser.IsLoggedIn = false
 
-console.log(regularUser);
+//console.log(regularUser);
 
 // Merging two Objects
 
@@ -21,5 +21,23 @@ const obj2 = {3:'c', 4: 'd'}
 
 const obj3 = {...obj1, ...obj2}
 
-console.log(obj3)
+//console.log(obj3)
+
+const course = {
+    courseName : "Intro to JS",
+    price : "999",
+    courseInstructor : "Hitesh"
+}
+
+console.log(course.price)
+
+// Deconstruction
+
+const {courseInstructor} = course
+
+console.log(courseInstructor)
+
+const {courseName} = course
+
+console.log(courseName)
 
