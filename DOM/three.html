@@ -1,0 +1,24 @@
+<!--
+    Creating a new Element
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+</body>
+<script>
+    const mydiv = document.createElement('div')
+    console.log(mydiv)
+    mydiv.className = "main"
+    mydiv.id = "myId"
+    mydiv.innerHTML = "My First Element"
+    mydiv.style.backgroundColor = "yellow"
+    mydiv.style.color = "white"
+    document.body.appendChild(mydiv)
+</script>
+</html>
