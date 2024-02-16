@@ -1,0 +1,55 @@
+<!--    
+    Adding list item using a function.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff; font-size: 24px;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    
+</body>
+<script>
+    function addItem(langName) {
+        const listItem = document.createElement('li')
+        listItem.innerHTML = langName
+        const ulist = document.querySelector('.language')
+        ulist.appendChild(listItem)
+    }
+
+    addItem("Python")
+    addItem("Java")
+    addItem("Ruby")
+    addItem("PHP")
+
+    function addOptiItem(langName) {
+       const li = document.createElement('li')
+       const addText = document.createTextNode(langName)
+       li.appendChild(addText)
+       const ulist = document.querySelector('.language')
+       ulist.appendChild(li)
+    }
+
+    addOptiItem("GoLang")
+
+    // Edit
+
+    const myElement = document.querySelector("li:nth-child(2)")
+    //newElement.innerHTML = "C++"
+
+    const newElement = document.createElement('li')
+    newElement.textContent = "MOJO"
+    myElement.replaceWith(newElement)
+
+    // DELETE
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
